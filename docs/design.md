@@ -9,6 +9,7 @@
 - 通信、キャッシュを使うかの判断、再取得、HTTPレスポンスやエラーの扱いは `box_url_cache` が担当する。
 - 保存機能の不具合や汎用的な改善が必要になった場合は、原因を調べたうえで `box_cache` 側で対応する。
 - 利用者向けのREADMEと開発ドキュメントを分け、後者は `docs/` に置く。
+- `box_cache` は公開READMEのpip手順で既存の `.venv` にインストールし、キャッシュ保存先は例示どおり `C:\Data\box_cache` とする。2026-10-28に実施済み。
 
 依存先: https://github.com/Mask-coins/box_cache
 
