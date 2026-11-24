@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "box-url-cache"
+version = "0.1.0"
+description = "URL response caching on top of box-cache."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.32,<3",
+    "box-cache @ https://github.com/Mask-coins/box_cache/archive/refs/heads/master.zip",
+]
+classifiers = ["Operating System :: Microsoft :: Windows"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
